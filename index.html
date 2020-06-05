@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Melody is a web app by Samhita Joshi that helps newbies to compose music and show off their music skills. That is it.">
+    <meta name="author" content="Samhita Joshi">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta name="keywords" content="xylophone,composer,samhita joshi.">
+    <title>Melody by Samhita Joshi|Compose music like a Newbie.</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="text-gray-700 body-font">
+        <div class="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <img src="chemfinity.png" class="w-20 h-20 text-white p-2 rounded-full" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M 12 2 L 2 7 l 10 5 l 10 -5 l -10 -5 Z M 2 17 l 10 5 l 10 -5 M 2 12 l 10 5 l 10 -5" />
+            <span class="ml-3 text-xl">Melody</span>
+          </a>
+        </div>
+      </header>
+    
+      <!-- buttons -->
+      <div class="container-fluid back">
+          <div class="container">
+            <button type="button" class="btn btn-info btn-block" onclick="note1()">Sa/Do</button>
+            <audio id="note1" src="assets/note1.wav"></audio>
+<br>
+            <button type="button" class="btn btn-primary btn-block" onclick="note2()">Re/Re</button>
+            <audio id="note2" src="assets/note2.wav"></audio>
+<br>
+            <button type="button" class="btn btn-danger btn-block" onclick="note3()">Ga/Mi</button>
+            <audio id="note3" src="assets/note3.wav"></audio>
+<br>
+            <button type="button" class="btn btn-dark btn-block" onclick="note4()">Ma/Fa</button>
+            <audio id="note4" src="assets/note4.wav"></audio>
+<br>
+            <button type="button" class="btn btn-warning btn-block" onclick="note5()">Pa/So</button>
+            <audio id="note5" src="assets/note5.wav"></audio>
+<br>
+            <button type="button" class="btn btn-success btn-block" onclick="note6()">Dha/La</button>
+            <audio id="note6" src="assets/note6.wav"></audio>
+<br>
+            <button type="button" class="btn btn-secondary btn-block" onclick="note7()">Ni/Ti</button>
+            <audio id="note7" src="assets/note7.wav"></audio>
+
+          </div>
+      </div>
+
+
+      <!-- footer -->
+      <footer class="text-gray-700 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <span class="ml-3 text-xl">Melody</span>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 Melody —
+            <a class="text-gray-600 ml-1" target="_blank" href="https://twitter.com/joshisamhita" target="_blank" rel="noopener noreferrer">Samhita Joshi</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            
+            <a class="ml-3 text-gray-500" target="_blank" href="https://twitter.com/joshisamhita">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M 23 3 a 10.9 10.9 0 0 1 -3.14 1.53 a 4.48 4.48 0 0 0 -7.86 3 v 1 A 10.66 10.66 0 0 1 3 4 s -4 9 5 13 a 11.64 11.64 0 0 1 -7 2 c 9 5 20 0 20 -11.5 a 4.5 4.5 0 0 0 -0.08 -0.83 A 7.72 7.72 0 0 0 23 3 Z" />
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500" target="_blank" href="https://instagram.com/samhitajoshi_official">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M 16 11.37 A 4 4 0 1 1 12.63 8 A 4 4 0 0 1 16 11.37 Z m 1.5 -4.87 h 0.01" />
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500" target="_blank" href="https://linkedin.com/in/samhitajoshi">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" viewBox="0 0 24 24">
+                <path stroke="none" d="M 16 8 a 6 6 0 0 1 6 6 v 7 h -4 v -7 a 2 2 0 0 0 -2 -2 a 2 2 0 0 0 -2 2 v 7 h -4 v -7 a 6 6 0 0 1 6 -6 Z M 2 9 h 4 v 12 H 2 Z" />
+                <circle stroke="none" cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
